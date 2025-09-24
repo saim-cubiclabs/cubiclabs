@@ -1,0 +1,49 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Mail } from "lucide-react";
+
+export function CTASection() {
+  return (
+    <section className="py-20 lg:py-32 bg-orange-100/50">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-4xl">
+          {/* Gradient border container */}
+          <div className="relative p-1 rounded-2xl bg-gradient-to-r from-green-600 via-yellow-500 to-red-500">
+            <div className="rounded-xl bg-white p-8 lg:p-12">
+              <div className="text-center">
+                <h2 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-5xl mb-4 text-gray-900">
+                  Want to grow your business?
+                </h2>
+                <p className="text-lg text-gray-600 text-pretty mb-8 lg:text-xl">
+                  Join hundreds of companies already building the future with
+                  Cubic Labs. Let's discuss how we can accelerate your growth.
+                </p>
+
+                <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+                  <Button
+                    size="lg"
+                    className="bg-green-700 hover:bg-emerald-900 text-white"
+                  >
+                    Get Started Today
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-green-700 text-green-700 hover:bg-emerald-900 bg-transparent"
+                  >
+                    <Mail className="mr-2 h-4 w-4" />
+                    Contact Sales
+                  </Button>
+                </div>
+
+                <p className="mt-6 text-sm text-gray-500">
+                  • Free consultation • No setup fees
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
