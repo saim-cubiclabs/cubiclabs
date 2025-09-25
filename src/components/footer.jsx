@@ -21,11 +21,7 @@ export function Footer() {
                   About Us
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Careers
-                </a>
-              </li>
+             
               <li>
                 <a href="#" className="hover:text-foreground transition-colors">
                   Blog
