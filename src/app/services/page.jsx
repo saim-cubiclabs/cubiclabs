@@ -1,4 +1,5 @@
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import { CustomHoverExpand } from "@/components/customhoverexpand";
 
 export default function AnimatedTestimonialsDemo() {
   const testimonials = [
@@ -36,12 +37,15 @@ export default function AnimatedTestimonialsDemo() {
     <div className="min-h-screen bg-orange-50">
       <div className="container mx-auto px-4 py-20">
         <h1 className="text-4xl font-bold text-center mb-16 text-gray-900">
-          Our Services At <span className="bg-gradient-to-r from-green-700 via-yellow-500 to-red-500 bg-clip-text text-transparent">
+          Our Services At{" "}
+          <span className="bg-gradient-to-r from-green-700 via-yellow-500 to-red-500 bg-clip-text text-transparent">
             Cubic Labs
           </span>
         </h1>
 
         <AnimatedTestimonials testimonials={testimonials} />
+
+        <CustomHoverExpand />
       </div>
     </div>
   );

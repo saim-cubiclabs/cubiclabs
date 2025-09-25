@@ -1,7 +1,21 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { AnimatedTooltipPreview } from "@/components/animated-tooltip-preview";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export function HeroSection() {
+  const [flipKey, setFlipKey] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFlipKey((prev) => prev + 1);
+    }, 5000); // Flip every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-orange-50 to-orange-100 py-20 lg:py-32">
       {/* Background geometric elements */}
@@ -20,9 +34,23 @@ export function HeroSection() {
 
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl">
             Turn your ideas into scalable digital products with{" "}
-            <span className="bg-gradient-to-r from-green-700 via-yellow-500 to-red-500 bg-clip-text text-transparent">
+            <motion.span
+              key={flipKey}
+              className="bg-gradient-to-r from-green-700 via-yellow-500 to-red-500 bg-clip-text text-transparent inline-block"
+              initial={{ rotateY: -90, opacity: 0.5 }}
+              animate={{ rotateY: 0, opacity: 1 }}
+              transition={{
+                duration: 0.5,
+                type: "spring",
+                stiffness: 200,
+              }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.2 },
+              }}
+            >
               Cubic Labs
-            </span>
+            </motion.span>
           </h1>
 
           <p className="mb-8 text-lg text-gray-600 text-pretty sm:text-xl lg:text-2xl">
@@ -48,9 +76,16 @@ export function HeroSection() {
             </Button>
           </div>
 
-          <div className="mt-12 text-sm text-gray-500">
+          <div className="mt-5 text-sm text-gray-500">
             Trusted by 3+ companies in kuwait
           </div>
+
+          <section className="mb-10 mt-15">
+            <h2 className="text-2xl font-bold mb-8 text-center text-gray-800">
+              Meet Our Team
+            </h2>
+            <AnimatedTooltipPreview />
+          </section>
         </div>
       </div>
     </section>
