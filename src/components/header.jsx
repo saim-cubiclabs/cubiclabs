@@ -11,25 +11,25 @@ export function Header() {
 
           <nav className="hidden md:flex items-center gap-8">
             <a
-              href="#home"
+              href="/"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
             >
               Home
             </a>
             <a
-              href="#services"
+              href="/services"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
             >
               Services
             </a>
             <a
-              href="#pricing"
+              href="/pricing"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
             >
               Pricing
             </a>
             <a
-              href="#about"
+              href="/about"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
             >
               About
