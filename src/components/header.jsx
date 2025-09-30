@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CubicLogo } from "./cubic-labs";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -55,8 +55,9 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat on WhatsApp"
-              className="hidden md:inline-flex items-center justify-center gap-2 rounded-md bg-green-700 px-4 py-2 text-sm font-medium text-white shadow hover:bg-emerald-900 focus:outline-none focus:ring-2 focus:ring-emerald-700/50"
+              className="hidden md:inline-flex items-center justify-center gap-2 rounded-md bg-green-700 px-4 py-2 text-sm font-medium text-white shadow hover:bg-emerald-900 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-all duration-300 transform hover:scale-105"
             >
+              <MessageCircle className="h-4 w-4" />
               WhatsApp
             </a>
 
@@ -125,8 +126,9 @@ export function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-green-700 px-4 py-2 text-sm font-medium text-white shadow hover:bg-emerald-900 focus:outline-none focus:ring-2 focus:ring-emerald-700/50"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-green-700 px-4 py-2 text-sm font-medium text-white shadow hover:bg-emerald-900 focus:outline-none focus:ring-2 focus:ring-emerald-700/50 transition-all duration-300 transform hover:scale-105"
               >
+                <MessageCircle className="h-4 w-4" />
                 WhatsApp
               </a>
             </nav>

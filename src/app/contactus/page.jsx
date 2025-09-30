@@ -67,7 +67,7 @@ export default function ContactUs() {
                 <Phone className="h-6 w-6" />
               </div>
               <div>
-                <p className="font-semibold text-gray-900">Connect with us on</p>
+                <p className="font-semibold text-gray-900">Connect - Call - WhatsApp us on</p>
                 <p className="text-gray-600">+965 41147331</p>
               </div>
             </div>
