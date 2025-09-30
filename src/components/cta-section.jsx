@@ -56,9 +56,21 @@ export function CTASection() {
   <p className="text-lg text-gray-600 text-pretty mb-8 lg:text-xl">We are proud to partner with the following companies</p>
   <div className="flex flex-wrap justify-center gap-4">
     <Link href="https://www.armadadelivery.com/">
-      <img src="/armada-removebg-preview.png" alt="Partner 1" width={200} height={100} />
+      <img src="/armada-removebg-preview.png" alt="Partner 1" width={100} height={100} />
     </Link>
   </div>
+</div>
+
+
+<div className="text-center"> 
+  <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-5xl mb-4 text-gray-900 mt-20">Our Clients</h1>
+  <p className="text-lg text-gray-600 text-pretty mb-8 lg:text-xl">We are proud to partner with the following companies</p>
+  <div className="flex flex-wrap justify-center gap-4">
+   
+      <img src="/miro.png" width={50} height={50} />
+   </div>
+   
+  
 </div>
     </section>
     
