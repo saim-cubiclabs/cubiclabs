@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { AnimatedTooltipPreview } from "@/components/animated-tooltip-preview";
@@ -59,17 +60,19 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Link href="https://wa.me/96541147331" passHref>
             <Button
               size="lg"
-              className="bg-green-700 hover:bg-emerald-900 text-white"
+              className="w-full sm:w-auto bg-green-700 hover:bg-emerald-900 text-white"
             >
               Start Building
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+            </Link>
             <Button
               size="lg"
               variant="outline"
-              className="border-green-700 text-green-700 hover:bg-emerald-900 bg-transparent"
+              className="w-full sm:w-auto border-green-700 text-green-700 hover:bg-emerald-900 bg-transparent"
             >
               <Play className="mr-2 h-4 w-4" />
               Watch Demo

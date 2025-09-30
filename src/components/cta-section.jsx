@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
 
@@ -19,6 +20,7 @@ export function CTASection() {
                 </p>
 
                 <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+                  <Link href="https://wa.me/96541147331" passHref>
                   <Button
                     size="lg"
                     className="bg-green-700 hover:bg-emerald-900 text-white"
@@ -26,14 +28,17 @@ export function CTASection() {
                     Get Started Today
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-green-700 text-green-700 hover:bg-emerald-900 bg-transparent"
-                  >
-                    <Mail className="mr-2 h-4 w-4" />
-                    Contact Sales
-                  </Button>
+                  </Link>
+                  <Link href="mailto:info@cubiclabs.net?subject=Sales Inquiry&body=Hello, I'm interested in your services. Please contact me for more information." passHref>
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="border-green-700 text-green-700 hover:bg-emerald-900 bg-transparent"
+                    >
+                      <Mail className="mr-2 h-4 w-4" />
+                      Contact Sales
+                    </Button>
+                  </Link>
                 </div>
 
                 <p className="mt-6 text-sm text-gray-500">
@@ -45,5 +50,6 @@ export function CTASection() {
         </div>
       </div>
     </section>
+    
   );
 }
