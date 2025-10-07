@@ -7,7 +7,7 @@ import Link from "next/link";
 const plans = [
   {
     name: "E-commerce Starts (Basic Plan)",
-    price: "150 KWD/ yearly",
+    price: "149 KWD/ yearly",
     features: [
       "Simple ready-made layout",
       "Online Store Setup",
@@ -27,7 +27,7 @@ const plans = [
   },
   {
     name: "E-commerce Starts (Pro Plan)",
-    price: "200 KWD/ yearly",
+    price: "199 KWD/ yearly",
     features: [
       "More polished layout",
       "Free domain included",
@@ -51,7 +51,7 @@ const plans = [
   },
   {
     name: "Custom Web Solution Starts (Premium Plan)",
-    price: "300 KWD/ yearly",
+    price: "299 KWD/ yearly",
     features: [
       "Custom layout with edits",
       "Free domain + setup help",
@@ -79,12 +79,23 @@ export default function Pricing() {
   return (
     <div className="min-h-screen bg-orange-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-        <h2 className="mt-15 mb-3 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+
+<div className=" mt-15 inline-flex items-center gap-2 rounded-full bg-green-700/10 px-4 py-2 text-sm font-medium text-green-700">
+            <div className="h-2 w-2 rounded-full bg-green-700 hover:bg-emerald-900 animate-pulse" />
+            Now Available: We also build website from  scratch 
+          </div>
+
+
+
+
+
+        <h2 className="mt-5 mb-3 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Pricing Plans
         </h2>
         <p className="mt-4 text-lg text-gray-600">
           Choose the best plan for your business
         </p>
+        <p className="mt-4 text-2xl   font-bold" >Flexable payment options with monthly payment (tabby buy now pay later) </p>
 
         <div className="mt-15 mb-15 grid gap-8 lg:grid-cols-3">
           {plans.map((plan, idx) => (
@@ -127,7 +138,7 @@ export default function Pricing() {
                       : "bg-green-700 text-white hover:bg-emerald-900"
                   }`}
                 >
-                  Get Started Now
+                  Get Started Now (can customize)
                 </button>
                 </Link>
               </div>

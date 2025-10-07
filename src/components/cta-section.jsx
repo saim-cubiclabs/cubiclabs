@@ -21,15 +21,18 @@ export function CTASection() {
 
                 <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
                   <Link href="https://wa.me/96541147331" passHref>
-                  <Button
-                    size="lg"
-                    className="bg-green-700 hover:bg-emerald-900 text-white"
-                  >
-                    Get Started Today
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                    <Button
+                      size="lg"
+                      className="bg-green-700 hover:bg-emerald-900 text-white"
+                    >
+                      Get Started Today
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
                   </Link>
-                  <Link href="mailto:info@cubiclabs.net?subject=Sales Inquiry&body=Hello, I'm interested in your services. Please contact me for more information." passHref>
+                  <Link
+                    href="mailto:info@cubiclabs.net?subject=Sales Inquiry&body=Hello, I'm interested in your services. Please contact me for more information."
+                    passHref
+                  >
                     <Button
                       size="lg"
                       variant="outline"
@@ -50,29 +53,42 @@ export function CTASection() {
         </div>
       </div>
 
+      <div className="text-center">
+        <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-5xl mb-4 text-gray-900 mt-20">
+          Our Partners
+        </h1>
+        <p className="text-lg text-gray-600 text-pretty mb-8 lg:text-xl">
+          We are proud to partner with the following companies
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link href="https://www.armadadelivery.com/">
+            <img
+              src="/armada-removebg-preview.png"
+              alt="Partner 1"
+              width={100}
+              height={100}
+            />
+          </Link>
+        </div>
 
-<div className="text-center"> 
-  <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-5xl mb-4 text-gray-900 mt-20">Our Partners</h1>
-  <p className="text-lg text-gray-600 text-pretty mb-8 lg:text-xl">We are proud to partner with the following companies</p>
-  <div className="flex flex-wrap justify-center gap-4">
-    <Link href="https://www.armadadelivery.com/">
-      <img src="/armada-removebg-preview.png" alt="Partner 1" width={100} height={100} />
-    </Link>
-  </div>
-</div>
+        <div className="flex flex-wrap justify-center gap-4 mt-7">
+          <Link href="https://upayments.com/en/">
+            <img src="/up.png" alt="Partner 2" width={100} height={100} />
+          </Link>
+        </div>
+      </div>
 
-
-<div className="text-center"> 
-  <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-5xl mb-4 text-gray-900 mt-20">Our Clients</h1>
-  <p className="text-lg text-gray-600 text-pretty mb-8 lg:text-xl">We are proud to partner with the following companies</p>
-  <div className="flex flex-wrap justify-center gap-4">
-   
-      <img src="/miro.png" width={50} height={50} />
-   </div>
-   
-  
-</div>
+      <div className="text-center">
+        <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-5xl mb-4 text-gray-900 mt-20">
+          Our Clients
+        </h1>
+        <p className="text-lg text-gray-600 text-pretty mb-8 lg:text-xl">
+          We are proud to partner with the following companies
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <img src="/miro.png" width={100} height={100} />
+        </div>
+      </div>
     </section>
-    
   );
 }
