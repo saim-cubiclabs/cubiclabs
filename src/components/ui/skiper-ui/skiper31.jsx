@@ -53,7 +53,10 @@ const CharacterV2 = ({ char, index, centerIndex, scrollYProgress }) => {
   return (
     <motion.img
       src={char}
-      className={cn("inline-block w-16 h-16 mx-2", isSpace && "w-4")}
+      className={cn(
+        "inline-block w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 mx-1 sm:mx-2",
+        isSpace && "w-4"
+      )}
       style={{
         x,
         scale,
@@ -88,7 +91,10 @@ const CharacterV3 = ({ char, index, centerIndex, scrollYProgress }) => {
   return (
     <motion.img
       src={char}
-      className={cn("inline-block w-16 h-16 mx-2", isSpace && "w-4")}
+      className={cn(
+        "inline-block w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 mx-1 sm:mx-2",
+        isSpace && "w-4"
+      )}
       style={{
         x,
         rotate,
@@ -120,7 +126,7 @@ const Skiper31 = () => {
   const centerIndex = Math.floor(characters.length / 2);
 
   const macIcon = [
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discord/discord-original.svg",
+    "https://cdn.worldvectorlogo.com/logos/discord-6.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
     "https://raw.githubusercontent.com/penpot/penpot/develop/frontend/resources/images/icons/penpot-logo-icon.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
@@ -144,7 +150,7 @@ const Skiper31 = () => {
           className="relative box-border flex h-[210vh] items-center justify-center gap-[2vw] overflow-hidden bg-[#f5f4f3] p-[2vw]"
         >
           <div
-            className="font-geist w-full max-w-4xl text-center text-6xl font-bold uppercase tracking-tighter text-black"
+            className="font-geist w-full max-w-4xl text-center text-2xl sm:text-4xl md:text-6xl font-bold uppercase tracking-tighter text-black"
             style={{
               perspective: "500px",
             }}
