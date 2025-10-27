@@ -2,8 +2,7 @@ import { HeroSection } from "@/components/hero-section";
 import { StatsSection } from "@/components/stats-section";
 import { ServicesSection } from "@/components/services-section";
 import { CTASection } from "@/components/cta-section";
-
-
+import { Skiper31 } from "@/components/ui/skiper-ui/skiper31";
 
 export default function HomePage() {
   return (
@@ -11,6 +10,7 @@ export default function HomePage() {
       <HeroSection />
       <StatsSection />
       <ServicesSection />
+      <Skiper31 />
       <CTASection />
     </>
   );
